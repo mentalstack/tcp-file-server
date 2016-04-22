@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="ProtoBuf, Version=2.0.0.668, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\ProtoBuf.dll</HintPath>
+      <HintPath>..\buf\ProtoBuf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

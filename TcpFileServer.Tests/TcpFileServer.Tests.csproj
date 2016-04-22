@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileServer\FileServer.csproj">
+    <ProjectReference Include="..\TcpFileServer\TcpFileServer.csproj">
       <Project>{1e95156f-b333-4cb3-b08f-81abb5db3e9a}</Project>
-      <Name>FileServer</Name>
+      <Name>TcpFileServer</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
