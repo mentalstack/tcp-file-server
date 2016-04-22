@@ -3,7 +3,7 @@ TcpFileServer
 
 Tcp file server and stream for .NET.
 
-TcpFileServer is **lightweight** server and file stream wrapper to send files via internet or intranet using good old approach.
+TcpFileServer is **async, quick and lightweight** server and file stream wrapper to send files via internet or intranet using good old approach. It uses ProtoBuf to optimize network bandwidth.
 
 Just look at this code sample to see how it works:
 
