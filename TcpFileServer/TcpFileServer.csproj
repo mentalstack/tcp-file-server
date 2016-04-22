@@ -30,9 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ProtoBuf, Version=2.0.0.668, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\buf\ProtoBuf.dll</HintPath>
+    <Reference Include="ProtoBuf">
+      <HintPath>..\Dist\ProtoBuf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
