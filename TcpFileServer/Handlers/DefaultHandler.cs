@@ -11,9 +11,9 @@
     using System.IO;
 
     /// <summary>
-    /// Default client handler.
+    /// Default command handler.
     /// </summary>
-    public class DefaultHandler : ClientHandler
+    public class DefaultHandler : CommandHandler
     {
         #region Defines
 

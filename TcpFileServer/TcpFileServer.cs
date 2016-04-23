@@ -252,9 +252,9 @@
     }
 
     /// <summary>
-    /// Client handler.
+    /// Command handler.
     /// </summary>
-    public abstract class ClientHandler
+    public abstract class CommandHandler
     {
         #region Defines
 
@@ -298,7 +298,7 @@
         /// <summary>
         /// Binds to client.
         /// </summary>
-        internal ClientHandler Bind(TcpClient client)
+        internal CommandHandler Bind(TcpClient client)
         {
             Client = client; // define client
             {
@@ -319,7 +319,7 @@
     /// <summary>
     /// Tcp file server.
     /// </summary>
-    public class TcpFileServer<T> where T : ClientHandler
+    public class TcpFileServer<T> where T : CommandHandler
     {
         #region Private Fields
 
