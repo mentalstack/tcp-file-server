@@ -23,16 +23,18 @@ using (var stream1 = new FileStream("C:\\Temp\\send.txt", FileMode.Open))
 {
 	using (var stream2 = new TcpFileStream("127.0.0.1", 11000, "sended1.txt", FileMode.Create))
 	{
-		stream1.CopyTo(stream2); Thread.Sleep(2000); stream1.Position = 0;
+		stream1.CopyTo(stream2); stream1.Position = 0; // copy from local file stream to tcp file stream (sended1.txt)
 	}
 	using (var stream3 = new TcpFileStream("127.0.0.1", 11000, "sended2.txt", FileMode.Create))
 	{
-		stream1.CopyTo(stream3); Thread.Sleep(2000); stream1.Position = 0;
+		stream1.CopyTo(stream3); stream1.Position = 0; // copy from local file stream to tcp file stream (sended2.txt)
 	}
 	using (var stream4 = new TcpFileStream("127.0.0.1", 11000, "sended3.txt", FileMode.Create))
 	{
-		stream1.CopyTo(stream4); Thread.Sleep(2000); stream1.Position = 0;
+		stream1.CopyTo(stream4); stream1.Position = 0; // copy from local file stream to tcp file stream (sended3.txt)
 	}
+
+	Thread.Sleep(5000);
 }
 
 if (!File.Exists("C:\\Temp\\sended1.txt")) Assert.Fail("1 not sent ...");
